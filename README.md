@@ -27,6 +27,18 @@
 Add Package:
 
 ```sh
+pnpm add fastjpeg/nft
+```
+
+```sh
+npm install fastjpeg/nft
+```
+
+```sh
+yarn install fastjpeg/nft
+```
+
+```sh
 bun install fastjpeg/nft
 ```
 
@@ -53,7 +65,7 @@ Configure:
 
 You can specify your own IPFS Gateways or Arweave hosts passing them into the client. The library will automatically fallback to gateways in their listed order.
 
-```javascript
+```typescript
 const ipfsGateways: URL[] = [
     new URL('https://dweb.link'),
     new URL('https://cloudflare-ipfs.com'),
@@ -64,11 +76,12 @@ const arweaveHosts: URL[] = [new URL('https://arweave.net')];
 const nftClient = nft(client, ipfsGateways, arweaveHosts);
 ```
 
-> ℹ️ [IPFS Gateway List](https://ipfs.github.io/public-gateway-checker/) - List of public IPFS gateways
+> [!IMPORTANT]
+> [IPFS Gateway List](https://ipfs.github.io/public-gateway-checker/) - List of public IPFS gateways
 
 Response:
 
-```javascript
+```typescript
 {
     address: '0x0e220A4F3957C17a2e780922DBC13Cb2C9aa4274',
     chainId: 1,
