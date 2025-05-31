@@ -1,6 +1,6 @@
 {
   "name": "@fastjpeg/nft",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TypeScript NFT Metadata Parser",
   "author": "Joe Blau <joe@fastjpeg.com>",
   "license": "MIT",
