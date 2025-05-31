@@ -1,4 +1,4 @@
-import { Address } from 'viem';
+import type { Address } from 'viem';
 
 export interface NFT {
   parseMetadata: (address: Address, tokenId: bigint) => Promise<any>;

@@ -16,7 +16,7 @@ import {
   LOOT_ADDRESS,
   AUTOGLYPHS_ADDRESS,
 } from '../constants/addresses';
-import { Address } from 'viem';
+import type { Address } from 'viem';
 
 export const getNFTException = (address: Address, chainId?: number) => {
   const isSuperrate = SUPERRARE_ADDRESS[chainId as keyof typeof SUPERRARE_ADDRESS] === address;

@@ -1,5 +1,5 @@
 import { LOOT_ABI } from '../abi/LootABI';
-import { Address, PublicClient } from 'viem';
+import type { Address, PublicClient } from 'viem';
 
 export async function fetchLootMetadata(client: PublicClient, tokenAddress: Address, tokenId: bigint) {
   const lootContract = {

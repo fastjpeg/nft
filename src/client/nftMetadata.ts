@@ -1,5 +1,5 @@
 import { getHTTPURL } from '../lib/scheme';
-import { NFTMetadata } from '../lib/types';
+import type { NFTMetadata } from '../lib/types';
 
 export const getNFTMetadata = async (response: any, ipfsURLs: URL[], arweaveURLs: URL[]): Promise<NFTMetadata> => {
   const name = response[0].result;
@@ -21,7 +21,7 @@ export const getNFTMetadata = async (response: any, ipfsURLs: URL[], arweaveURLs
   for (const [index, httpURL] of httpURLs.entries()) {
     try {
       const metadataResponse = await fetch(httpURL);
-      const metadata = await metadataResponse.json();
+      const metadata = (await metadataResponse.json()) as NFTMetadata;
 
       nftMetadata.metadata = metadata;
 
@@ -35,7 +35,7 @@ export const getNFTMetadata = async (response: any, ipfsURLs: URL[], arweaveURLs
           if (httpURLs.length === 0) {
             continue;
           }
-          nftMetadata[key] = httpURLs[index].toString();
+          nftMetadata[key] = httpURLs[index]?.toString() ?? '';
         }
       }
       return nftMetadata;

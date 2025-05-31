@@ -1,5 +1,5 @@
 import { AUTOGLYPHS_ABI } from '../abi/AutoglyphsABI';
-import { Address, PublicClient } from 'viem';
+import type { Address, PublicClient } from 'viem';
 
 const SCHEME_MAP = {
   1: ' X/\\',
