@@ -1,5 +1,5 @@
 {
-  "name": "@fastjpeg/nft",
+  "name": "nft",
   "version": "0.0.1",
   "description": "TypeScript NFT Metadata Parser",
   "author": "Joe Blau <joe@fastjpeg.com>",
@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/fastjpeg/nft/issues"
   },
-  "homepage": "https://github.com/fastjpeg/nft#readme"
+  "homepage": "https://github.com/fastjpeg/nft#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
