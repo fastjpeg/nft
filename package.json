@@ -4,8 +4,8 @@
   "description": "TypeScript NFT Metadata Parser",
   "author": "Joe Blau <joe@fastjpeg.com>",
   "license": "MIT",
-  "module": "src/index.ts",
-  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.d.ts",
   "scripts": {
     "build": "tsc",
     "coverage": "vitest run --coverage",

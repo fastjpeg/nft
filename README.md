@@ -45,7 +45,7 @@ bun install fastjpeg/nft
 Use Package:
 
 ```javascript
-import { nft } from 'fastjpeg/nft';
+import { nft } from '@fastjpeg/nft';
 
 const client = createPublicClient({
     chain: mainnet,
