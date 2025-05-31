@@ -5,7 +5,7 @@
   "author": "Joe Blau <joe@fastjpeg.com>",
   "license": "MIT",
   "main": "src/index.ts",
-  "types": "src/index.d.ts",
+  "types": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "coverage": "vitest run --coverage",
