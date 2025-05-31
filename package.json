@@ -13,6 +13,9 @@
     "test:cov": "vitest run --coverage",
     "test:watch": "vitest"
   },
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "devDependencies": {
     "@vitest/coverage-v8": "^1.2.2",
     "husky": "^9.0.10",
